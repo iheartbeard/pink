@@ -1,0 +1,76 @@
+.filter-range {
+  position: relative;
+  width: 50px;
+  height: 15px;
+
+  &:nth-of-type(1) {
+    .filter-range__toggle {
+      left: 83%;
+    }
+  }
+}
+
+.filter-range__bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: $gray--dark;
+  transform: translate(-50%, -50%);
+}
+
+.filter-range__toggle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  background-color: $bg--gray;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+
+  &:active {
+    background-color: $pink;
+  }
+}
+
+@media #{$tablet} {
+  .filter-range {
+    &:nth-of-type(1) {
+      .filter-range__toggle {
+        left: 75%;
+      }
+    }
+
+    &:nth-of-type(2) {
+      .filter-range__toggle {
+        left: 15%;
+      }
+    }
+  }
+}
+
+
+@media #{$desktop} {
+  .filter-range {
+    &:nth-of-type(1) {
+      .filter-range__toggle {
+        left: 27%;
+      }
+    }
+
+    &:nth-of-type(2) {
+      .filter-range__toggle {
+        left: 88%;
+      }
+    }
+
+    &:nth-of-type(3) {
+      .filter-range__toggle {
+        left: 58%;
+      }
+    }
+  }
+}
