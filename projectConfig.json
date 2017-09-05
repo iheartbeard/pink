@@ -1,0 +1,30 @@
+{
+  "blocks": {
+
+  },
+  "directories": {
+    "srcPath": "./src/",
+    "buildPath": "./build/",
+    "blocksDirName": "_include",
+    "public": {
+      "css": "./build/css",
+      "img": "./build/img",
+      "js": "./build/js",
+      "fonts": "./build/fonts"
+    },
+    "src": {
+      "html": "./src/*.html",
+      "style": "./src/sсss/style.scss",
+      "js": "./src/js/*.js",
+      "images": "./src/img/**/*.*",
+      "fonts": "./src/fonts/**/*.*"
+    },
+    "watch": {
+      "html": "./src/**/*.html",
+      "style": "./src/scss/**/*.scss",
+      "js": "./src/js/**/*.js",
+      "images": "./src/img/**/*.*",
+      "fonts": "./src/fonts/**/*.*"
+    }
+  }
+}
