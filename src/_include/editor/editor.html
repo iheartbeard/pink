@@ -1,0 +1,44 @@
+<!--DEV
+
+Для использования этого файла как шаблона:
+
+@ @include('_include/editor/editor.html')
+
+(Нужно убрать пробел между символами @)
+Подробнее: https://www.npmjs.com/package/gulp-file-include
+
+-->
+<form class="editor" action="https://echo.htmlacademy.ru/" method="post">
+  <div class="editor__wrapper">
+    <div class="editor__img">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/photo-7-desktop@2x.jpg 2x, img/photo-7-desktop@1x.jpg 1x">
+        <source media="(min-width: 660px)" srcset="img/photo-7-tablet@2x.jpg 2x, img/photo-7-tablet@1x.jpg 1x">
+        <img src="img/photo-7-mobile@1x.jpg" alt="Изображение" srcset="img/photo-7-mobile@2x.jpg 2x">
+      </picture>
+    </div>
+    <div class="editor__inner">
+      <div class="editor__filter">
+        <label class="editor__option editor__option--active">Обрезка</label>
+        <div class="editor__range editor__range--visible filter-range">
+          <div class="filter-range__bar"></div>
+          <div class="filter-range__toggle"></div>
+        </div>
+        <label class="editor__option">Заливка</label>
+        <div class="editor__range filter-range">
+          <div class="filter-range__bar"></div>
+          <div class="filter-range__toggle"></div>
+        </div>
+        <label class="editor__option">Контрастность</label>
+        <div class="editor__range filter-range">
+          <div class="filter-range__bar"></div>
+          <div class="filter-range__toggle"></div>
+        </div>
+      </div>
+      <div class="editor__buttons">
+        <button class="editor__button btn btn--pink" type="submit">Запостить</button>
+        <button class="editor__button btn btn--disable" type="reset">Отмена</button>
+      </div>
+    </div>
+  </div>
+</form>

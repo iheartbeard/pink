@@ -1,0 +1,75 @@
+<!--DEV
+
+Для использования этого файла как шаблона:
+
+@ @include('_include/form/form.html')
+
+(Нужно убрать пробел между символами @)
+Подробнее: https://www.npmjs.com/package/gulp-file-include
+
+-->
+<form class="form" action="https://echo.htmlacademy.ru/" method="post">
+  <div class="form__full-name-group">
+    <div class="form__name-wrapper">
+      <label for="second-name">Фамилия:</label>
+      <input type="text" id="second-name" name="second-name" placeholder="Укажите фамилию *" required>
+    </div>
+    <div class="form__name-wrapper">
+      <label for="first-name">Имя:</label>
+      <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" required>
+    </div>
+    <div class="form__name-wrapper">
+      <label for="middle-name">Отчество:</label>
+      <input type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
+    </div>
+  </div>
+  <div class="form__achievements-group">
+    <h2 class="form__group-title">Ваши безбашенные достижения в путешествии</h2>
+    <input type="checkbox" id="selfy" name="selfy" checked>
+    <label for="selfy">Сделал селфи с акулой</label>
+    <input type="checkbox" id="chuck-norris" name="chuck-norris">
+    <label for="chuck-norris">Видел Чака Норриса</label>
+    <input type="checkbox" id="tower" name="tower" checked>
+    <label for="tower">Удержал башню</label>
+    <input type="checkbox" id="burn" name="burn" checked>
+    <label for="burn">Обгорел на пляже</label>
+    <input type="checkbox" id="souvenir" name="souvenir">
+    <label for="souvenir">Накупил сувениров</label>
+    <input type="checkbox" id="hotel" name="hotel">
+    <label for="hotel">Разгромил отель</label>
+  </div>
+  <div class="form__contacts-group">
+    <h2 class="form__group-title">Контактная информация</h2>
+    <div class="form__contacts-wrapper">
+      <div class="form__tel-wrapper">
+        <label for="tel">Номер телефона</label>
+        <div class="form__tel-inner">
+          <input type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
+        </div>
+      </div>
+      <div class="form__email-wrapper">
+        <label for="email">Адрес почты</label>
+        <div class="form__email-inner">
+          <input type="email" id="email" name="email" placeholder="Введите почту *" required>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form__app-group">
+    <h2 class="form__group-title">С каким приложением путешествовали?</h2>
+    <input type="radio" id="ios" name="app" value="ios" checked>
+    <label for="ios">Pink для iOS</label>
+    <input type="radio" id="android" name="app" value="android">
+    <label for="android">Pink на Android</label>
+    <input type="radio" id="winphone" name="app" value="winphone">
+    <label for="winphone">Windows Phone</label>
+  </div>
+  <div class="form__text-group">
+    <h2 class="form__group-title">Опишите свои эмоции</h2>
+    <textarea name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+  </div>
+  <div class="form__btn-group">
+    <button class="form__send-btn" type="submit">Отправить форму</button>
+    <p class="form__note"><span class="form__note-asterisk">*</span> — обязательные<span class="form__note-hidden"> для заполнения</span> поля</p>
+  </div>
+</form>
