@@ -1,30 +1,55 @@
 {
   "blocks": {
-
+    "advantages": [],
+    "btn": [],
+    "contacts": [],
+    "editor": [],
+    "filter-range": [],
+    "form": [],
+    "main-nav": [],
+    "modal": [],
+    "page-content": [],
+    "page-footer": [],
+    "page-header": [],
+    "price": [],
+    "promo": [],
+    "reviews": [],
+    "slider": [],
+    "social": [],
+    "user-posts": []
   },
   "directories": {
     "srcPath": "./src/",
     "buildPath": "./build/",
-    "blocksDirName": "_include",
+    "blocksDirName": "blocks",
     "public": {
       "css": "./build/css",
-      "img": "./build/img",
+      "images": "./build/img",
       "js": "./build/js",
       "fonts": "./build/fonts"
     },
     "src": {
       "html": "./src/*.html",
-      "style": "./src/sсss/style.scss",
       "js": "./src/js/*.js",
       "images": "./src/img/**/*.*",
       "fonts": "./src/fonts/**/*.*"
     },
     "watch": {
       "html": "./src/**/*.html",
-      "style": "./src/scss/**/*.scss",
+      "style": "./src/**/*.scss",
       "js": "./src/js/**/*.js",
       "images": "./src/img/**/*.*",
       "fonts": "./src/fonts/**/*.*"
     }
-  }
+  },
+  "addCssBefore": [
+    "./src/scss/global/variables.scss",
+    "./src/scss/global/global.scss",
+    "./src/scss/global/fonts.scss",
+    "./src/scss/global/mixins.scss",
+    "./src/scss/normalize.scss"
+  ],
+  "addCssAfter": [],
+  "addJsBefore": [],
+  "addJsAfter": []
 }
