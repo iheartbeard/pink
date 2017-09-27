@@ -32,6 +32,7 @@
       "html": "./src/*.html",
       "js": "./src/js/*.js",
       "images": "./src/img/**/*.*",
+      "sprite": "./src/img/icons/*.svg",
       "fonts": "./src/fonts/**/*.*"
     },
     "watch": {
