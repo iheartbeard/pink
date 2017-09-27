@@ -8,7 +8,7 @@
 *.rar
 *.zip
 build/
-css/*.css
+src/scss/style.scss
 node_modules/
 Thumbs.db
 __MACOSX
