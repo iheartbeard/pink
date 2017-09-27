@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+*.rar
+*.zip
+build/
+src/scss/style.scss
+node_modules/
+Thumbs.db
+__MACOSX
