@@ -1,0 +1,43 @@
+<!--DEV
+
+Для использования этого файла как шаблона:
+
+@ @include('_include/reviews/reviews.html')
+
+(Нужно убрать пробел между символами @)
+Подробнее: https://www.npmjs.com/package/gulp-file-include
+
+-->
+<section class="reviews">
+  <div class="reviews__wrapper slider">
+    <div class="reviews__list slider__wrapper">
+      <blockquote class="reviews__item reviews__item--visible slider__item">
+        <cite class="reviews__author-name">Николай Петров <span>25 лет, водитель трамвая</span></cite>
+        <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+      </blockquote>
+      <blockquote class="reviews__item slider__item">
+        <cite class="reviews__author-name">Николай Петров <span>25 лет, водитель трамвая</span></cite>
+        <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+      </blockquote>
+      <blockquote class="reviews__item slider__item">
+        <cite class="reviews__author-name">Николай Петров <span>25 лет, водитель трамвая</span></cite>
+        <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+      </blockquote>
+    </div>
+    <button class="reviews__prev" type="button">
+      <svg class="reviews__prev-svg">
+        <use xlink:href="img/symbols.svg#icon-review-arrow-left"></use>
+      </svg>
+    </button>
+    <button class="reviews__next" type="button">
+      <svg class="reviews__next-svg">
+        <use xlink:href="img/symbols.svg#icon-review-arrow-right"></use>
+      </svg>
+    </button>
+    <div class="reviews__pagination slider__pagination">
+      <span class="slider__pagination-item slider__pagination-item--active"></span>
+      <span class="slider__pagination-item"></span>
+      <span class="slider__pagination-item"></span>
+    </div>
+  </div>
+</section>

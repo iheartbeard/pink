@@ -1,0 +1,144 @@
+<!--DEV
+
+Для использования этого файла как шаблона:
+
+@ @include('_include/user-posts/user-posts.html')
+
+(Нужно убрать пробел между символами @)
+Подробнее: https://www.npmjs.com/package/gulp-file-include
+
+-->
+<section class="user-posts">
+  <div class="user-posts__post-wrapper">
+    <div class="user-posts__img">
+      <a href="#">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/photo-1-desktop@2x.jpg 2x, img/photo-1-desktop@1x.jpg 1x">
+          <source media="(min-width: 660px)" srcset="img/photo-1-tablet@2x.jpg 2x, img/photo-1-tablet@1x.jpg 1x">
+          <img src="img/photo-1-mobile@1x.jpg" alt="Фото" srcset="img/photo-1-mobile@2x.jpg 2x">
+        </picture>
+      </a>
+    </div>
+    <div class="user-posts__text-wrapper">
+      <div class="user-posts__author-wrapper">
+        <span class="user-posts__user-name">Левон</span>
+        <span class="user-posts__time">(5 часов назад)</span>
+      </div>
+      <p class="user-posts__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+      <div class="user-posts__like-wrapper">
+        <button type="button" class="user-posts__like">Нравится</button>
+        <span class="user-posts__like-counter">Нравится: 356</span>
+      </div>
+    </div>
+  </div>
+  <div class="user-posts__post-wrapper">
+    <div class="user-posts__img">
+      <a href="#">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/photo-2-desktop@2x.jpg 2x, img/photo-2-desktop@1x.jpg 1x">
+          <source media="(min-width: 660px)" srcset="img/photo-2-tablet@2x.jpg 2x, img/photo-2-tablet@1x.jpg 1x">
+          <img src="img/photo-2-mobile@1x.jpg" alt="Фото" srcset="img/photo-2-mobile@2x.jpg 2x">
+        </picture>
+      </a>
+    </div>
+    <div class="user-posts__text-wrapper">
+      <div class="user-posts__author-wrapper">
+        <span class="user-posts__user-name">Антон</span>
+        <span class="user-posts__time">(12 часов назад)</span>
+      </div>
+      <p class="user-posts__comment">Соседи будут рады!</p>
+      <div class="user-posts__like-wrapper">
+        <button type="button" class="user-posts__like">Нравится</button>
+        <span class="user-posts__like-counter">Нравится: 666</span>
+      </div>
+    </div>
+  </div>
+  <div class="user-posts__post-wrapper">
+    <div class="user-posts__img">
+      <a href="#">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/photo-3-desktop@2x.jpg 2x, img/photo-3-desktop@1x.jpg 1x">
+          <source media="(min-width: 660px)" srcset="img/photo-3-tablet@2x.jpg 2x, img/photo-3-tablet@1x.jpg 1x">
+          <img src="img/photo-3-mobile@1x.jpg" alt="Фото" srcset="img/photo-3-mobile@2x.jpg 2x">
+        </picture>
+      </a>
+    </div>
+    <div class="user-posts__text-wrapper">
+      <div class="user-posts__author-wrapper">
+        <span class="user-posts__user-name">Борис</span>
+        <span class="user-posts__time">(20 часов назад)</span>
+      </div>
+      <p class="user-posts__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+      <div class="user-posts__like-wrapper">
+        <button type="button" class="user-posts__like">Нравится</button>
+        <span class="user-posts__like-counter">Нравится: 215</span>
+      </div>
+    </div>
+  </div>
+  <div class="user-posts__post-wrapper">
+    <div class="user-posts__img">
+      <a href="#">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/photo-4-desktop@2x.jpg 2x, img/photo-4-desktop@1x.jpg 1x">
+          <source media="(min-width: 660px)" srcset="img/photo-4-tablet@2x.jpg 2x, img/photo-4-tablet@1x.jpg 1x">
+          <img src="img/photo-4-mobile@1x.jpg" alt="Фото" srcset="img/photo-4-mobile@2x.jpg 2x">
+        </picture>
+      </a>
+    </div>
+    <div class="user-posts__text-wrapper">
+      <div class="user-posts__author-wrapper">
+        <span class="user-posts__user-name">Сергей</span>
+        <span class="user-posts__time">(25 часов назад)</span>
+      </div>
+      <p class="user-posts__comment">Самая кубанская в мире!</p>
+      <div class="user-posts__like-wrapper">
+        <button type="button" class="user-posts__like">Нравится</button>
+        <span class="user-posts__like-counter">Нравится: 4</span>
+      </div>
+    </div>
+  </div>
+  <div class="user-posts__post-wrapper">
+    <div class="user-posts__img">
+      <a href="#">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/photo-5-desktop@2x.jpg 2x, img/photo-5-desktop@1x.jpg 1x">
+          <source media="(min-width: 660px)" srcset="img/photo-5-tablet@2x.jpg 2x, img/photo-5-tablet@1x.jpg 1x">
+          <img src="img/photo-5-mobile@1x.jpg" alt="Фото" srcset="img/photo-5-mobile@2x.jpg 2x">
+        </picture>
+      </a>
+    </div>
+    <div class="user-posts__text-wrapper">
+      <div class="user-posts__author-wrapper">
+        <span class="user-posts__user-name">Максим</span>
+        <span class="user-posts__time">(40 часов назад)</span>
+      </div>
+      <p class="user-posts__comment">Где снег-то?</p>
+      <div class="user-posts__like-wrapper">
+        <button type="button" class="user-posts__like">Нравится</button>
+        <span class="user-posts__like-counter">Нравится: 150</span>
+      </div>
+    </div>
+  </div>
+  <div class="user-posts__post-wrapper">
+    <div class="user-posts__img">
+      <a href="#">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/photo-6-desktop@2x.jpg 2x, img/photo-6-desktop@1x.jpg 1x">
+          <source media="(min-width: 660px)" srcset="img/photo-6-tablet@2x.jpg 2x, img/photo-6-tablet@1x.jpg 1x">
+          <img src="img/photo-6-mobile@1x.jpg" alt="Фото" srcset="img/photo-6-mobile@2x.jpg 2x">
+        </picture>
+      </a>
+    </div>
+    <div class="user-posts__text-wrapper">
+      <div class="user-posts__author-wrapper">
+        <span class="user-posts__user-name">Надежда</span>
+        <span class="user-posts__time">(45 часов назад)</span>
+      </div>
+      <p class="user-posts__comment">Всем GM и взаимные лайки!</p>
+      <div class="user-posts__like-wrapper">
+        <button type="button" class="user-posts__like">Нравится</button>
+        <span class="user-posts__like-counter">Нравится: 2560</span>
+      </div>
+    </div>
+  </div>
+</section>
