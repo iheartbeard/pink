@@ -18,12 +18,12 @@ const extensions = uniqueArray(defaultExtensions.concat(process.argv.slice(3)));
 if (blockName) {
   const dirPath = `${dirs.srcPath + dirs.blocksDirName}/${blockName}/`;           // полный путь к создаваемой папке блока
   mkdirp(dirPath, (err) => {                                                      // создаем папку
-    if (err) {
-      console.error(`Отмена операции: ${err}`);                                   // если есть ошибки — выводим в консоль
+    if (err) {                                                                    // если есть ошибки — выводим в консоль
+      console.error(`Отмена операции: ${err}`);
     }
-
+    // Если ошибок нет, то продолжаем
     else {
-      console.log(`Создание папки ${dirPath} (если отсутствует)`);                // нет ошибки, поехали!
+      console.log(`Создание папки ${dirPath} (если отсутствует)`);
       extensions.forEach((extention) => {                                         // Обходим массив расширений и создаем файлы, если они еще не созданы
         const filePath = `${dirPath + blockName}.${extention}`;                   // полный путь к создаваемому файлу
         let fileContent = '';                                                     // будущий контент файла
@@ -34,7 +34,7 @@ if (blockName) {
           fileContent = `// В этом файле должны быть стили для БЭМ-блока ${blockName}, его элементов, \n// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...\n`;
           // fileCreateMsg = '';
 
-          // Добавим созданный файл в массив блоков в projectConfig.json
+          // Добавим созданный файл в массив блоков внутри projectConfig.json
           let hasThisBlock = false;
           for (const block in projectConfig.blocks) {
             if (block === blockName) {
@@ -52,7 +52,7 @@ if (blockName) {
 
         // Если это HTML
         else if (extention === 'html') {
-          fileContent = `<!--DEV\n\nДля использования этого файла как шаблона:\n\n@ @include('_include/${blockName}/${blockName}.html')\n\n(Нужно убрать пробел между символами @)\nПодробнее: https://www.npmjs.com/package/gulp-file-include\n\n-->\n\n<div class="${blockName}">content</div>\n`;
+          fileContent = `<!--DEV\n\nДля использования этого файла как шаблона:\n\n@ @include('blocks/${blockName}/${blockName}.html')\n\n(Нужно убрать пробел между символами @)\nПодробнее: https://www.npmjs.com/package/gulp-file-include\n\n-->\n\n<div class="${blockName}">content</div>\n`;
           // fileCreateMsg = '';
         }
 
@@ -100,7 +100,7 @@ function uniqueArray(arr) {
   const objectTemp = {};
   for (let i = 0; i < arr.length; i++) {
     const str = arr[i];
-    objectTemp[str] = true; // запомнить строку в виде свойства объекта
+    objectTemp[str] = true;                                                       // запомнить строку в виде свойства объекта
   }
   return Object.keys(objectTemp);
 }
