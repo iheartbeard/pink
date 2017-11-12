@@ -39,16 +39,8 @@
       background-color: $bg--white;
     }
   }
-}
 
-@media #{tablet} {
-  .slider__pagination-item {
-    display: none;
-  }
-}
+  @media #{$tablet} {display: none;}
 
-@media #{$desktop} {
-  .slider__pagination-item {
-    display: none;
-  }
+  @media #{$desktop} {display: none;}
 }

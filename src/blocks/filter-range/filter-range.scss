@@ -8,6 +8,24 @@
   &:nth-of-type(1) {
     .filter-range__toggle {
       left: 83%;
+
+      @media #{$tablet} {left: 75%;}
+
+      @media #{$desktop} {left: 27%;}
+    }
+  }
+
+  &:nth-of-type(2) {
+    .filter-range__toggle {
+      @media #{$tablet} {left: 15%;}
+
+      @media #{$desktop} {left: 88%;}
+      }
+    }
+
+  &:nth-of-type(3) {
+    .filter-range__toggle {
+      @media #{$desktop} {left: 58%;}
     }
   }
 }
@@ -35,44 +53,5 @@
 
   &:active {
     background-color: $pink;
-  }
-}
-
-@media #{$tablet} {
-  .filter-range {
-    &:nth-of-type(1) {
-      .filter-range__toggle {
-        left: 75%;
-      }
-    }
-
-    &:nth-of-type(2) {
-      .filter-range__toggle {
-        left: 15%;
-      }
-    }
-  }
-}
-
-
-@media #{$desktop} {
-  .filter-range {
-    &:nth-of-type(1) {
-      .filter-range__toggle {
-        left: 27%;
-      }
-    }
-
-    &:nth-of-type(2) {
-      .filter-range__toggle {
-        left: 88%;
-      }
-    }
-
-    &:nth-of-type(3) {
-      .filter-range__toggle {
-        left: 58%;
-      }
-    }
   }
 }

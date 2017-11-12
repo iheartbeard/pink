@@ -12,16 +12,43 @@
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
   transform: translate(-50%, -50%);
 
+  @media #{$tablet} {
+    width: 460px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
   &--success {
     background-image: linear-gradient(to top, $bg--gray, $bg--gray 163px, #fff 163px, #fff);
 
+    @media #{$tablet} {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+
+    @media #{$desktop} {
+      width: 780px;
+      padding-left: 160px;
+      padding-right: 160px;
+    }
+
     .modal__descr {
       margin-bottom: 80px;
+
+      @media #{$desktop} {margin-bottom: 85px;}
     }
   }
 
   &--visible {
     display: block;
+  }
+}
+
+.modal__wrap {
+  @media #{$tablet} {
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -33,6 +60,12 @@
   line-height: 24px;
   color: #000;
   text-align: center;
+
+  @media #{$tablet} {
+    padding: 0 20px;
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .modal__descr {
@@ -43,6 +76,16 @@
   line-height: 24px;
   color: $gray--dark;
   text-align: center;
+
+  @media #{$tablet} {font-size: 18px;}
+}
+
+.modal__text {
+  @media #{$tablet} {
+    font-size: 18px;
+    padding-left: 77px;
+    padding-right: 77px;
+  }
 }
 
 .modal__btn {
@@ -60,6 +103,10 @@
   color: $txt--white;
   text-transform: uppercase;
 
+  @media #{$tablet} {width: 300px;}
+
+  @media #{$desktop} {width: 100%;}
+
   &:hover {
     background-color: $green--hover;
   }
@@ -72,75 +119,5 @@
   &:disabled {
     background-color: #e5e5e5;
     color: $txt--white;
-  }
-}
-
-@media #{$tablet} {
-  .modal {
-    width: 460px;
-  }
-
-  .modal__title {
-    padding-left: 120px;
-    padding-right: 120px;
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  .modal__text {
-    font-size: 18px;
-    padding-left: 77px;
-    padding-right: 77px;
-  }
-
-  .modal__wrap {
-    padding-bottom: 50px;
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-}
-
-@media #{$tablet} {
-  .modal {
-    width: 460px;
-    padding-left: 80px;
-    padding-right: 80px;
-
-    &--success {
-      padding-left: 70px;
-      padding-right: 70px;
-    }
-  }
-
-  .modal__title {
-    padding: 0 20px;
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  .modal__descr {
-    font-size: 18px;
-  }
-
-  .modal__btn {
-    width: 300px;
-  }
-}
-
-@media #{$desktop} {
-  .modal {
-    &--success {
-      width: 780px;
-      padding-left: 160px;
-      padding-right: 160px;
-
-      .modal__descr {
-        margin-bottom: 85px;
-      }
-
-      .modal__btn {
-        width: 100%;
-      }
-    }
   }
 }

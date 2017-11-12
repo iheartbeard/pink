@@ -6,6 +6,13 @@
   line-height: 32px;
   color: $txt--white;
   text-transform: uppercase;
+
+  @media #{$desktop} {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: none;
+  }
 }
 
 .main-nav__toggler {
@@ -13,6 +20,10 @@
   justify-content: flex-end;
   height: 22px;
   padding: 22px 20px 26px;
+
+  @media #{$tablet} {padding: 44px 20px 43px;}
+
+  @media #{$desktop} {display: none;}
 
   span {
     display: block;
@@ -63,12 +74,23 @@
   padding: 0;
   list-style: none;
 
+  @media #{$desktop} {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
   &--visible {
     display: block;
   }
 }
 
 .main-nav__item {
+  @media #{$desktop} {
+    margin: 0;
+    padding: 45px 0 47px;
+  }
+
   a {
     display: block;
     padding: 17px 10px 15px;
@@ -80,12 +102,21 @@
     text-decoration: none;
     text-align: center;
 
+    @media #{$desktop} {
+      margin-left: 80px;
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+    }
+
     &:hover {
       color: $pink;
     }
 
     &:active {
       color: rgba($pink, 0.3);
+
+      @media #{$desktop} {color: rgba(255, 255, 255, 0.3);}
     }
   }
 
@@ -93,58 +124,7 @@
     a {
       cursor: default;
 
-      &:hover {
-        color: $txt--white;
-      }
-
-      &:active {
-        color: $txt--white;
-      }
-    }
-  }
-}
-
-@media #{$tablet} {
-  .main-nav__toggler {
-    padding: 44px 20px 43px;
-  }
-}
-
-@media #{$desktop} {
-  .main-nav {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 18px;
-    text-transform: none;
-  }
-
-  .main-nav__toggler {
-    display: none;
-  }
-
-  .main-nav__list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-  }
-
-  .main-nav__item {
-    margin: 0;
-    padding: 45px 0 47px;
-
-    a {
-      margin-left: 80px;
-      padding: 0;
-      background-color: transparent;
-      box-shadow: none;
-
-      &:active {
-        color: rgba(255, 255, 255, 0.3);
-      }
-    }
-
-    &--active {
-      a {
+      @media #{$desktop} {
         position: relative;
 
         &::before {
@@ -157,9 +137,14 @@
           background-color: $txt--white;
         }
 
-        &:active {
-          color: $txt--white;
-        }
+      }
+
+      &:hover {
+        color: $txt--white;
+      }
+
+      &:active {
+        color: $txt--white;
       }
     }
   }
