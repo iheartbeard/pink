@@ -14,7 +14,7 @@
     background-size: 100% 50px, auto auto;
   }
 
-  @media #{$desktop} {
+  @media #{desktop} {
     padding-top: 68px;
     background-image: url("../img/bg-triangle-white.svg"), linear-gradient(to bottom, transparent, transparent 327px, $bg--gray 327px, $bg--gray);
     background-position: 0 325px, 0 0;
@@ -27,8 +27,8 @@
 
   @media #{$tablet} {position: relative;}
 
-  &--research{
-    &::before{
+  &--research {
+    &::before {
       @media #{$tablet} {
         content: "";
         display: block;
@@ -127,7 +127,7 @@
     text-align: left;
   }
 
-  @media #{dekstop} {
+  @media #{$desktop} {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -207,6 +207,8 @@
       background-size: 157px auto;
       transform: translateX(-50%);
 
+      @media #{$mobile} {background-image: url("../img/iphone-screen-mobile@2x.png");}
+
       @media #{$tablet} {
         left: 0;
         width: 268px;
@@ -239,22 +241,6 @@
   }
 }
 
-.advantages__link {
-  @media #{$tablet} {
-    padding-left: 309px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: $pink;
-  }
-
-  @media #{$desktop} {
-    padding-left: 366px;
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
 .advantages__title {
   margin: 0;
   margin-bottom: 10px;
@@ -267,6 +253,22 @@
     margin-bottom: 23px;
     padding: 0 34px;
     font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.advantages__link {
+  @media #{$tablet} {
+    padding-left: 309px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $pink;
+  }
+
+  @media #{$desktop} {
+    padding-left: 366px;
+    font-size: 18px;
     line-height: 30px;
   }
 }
@@ -307,8 +309,7 @@
 
 .advantages__research-title {
   @media #{$tablet} {
-    margin: 0;
-    margin-bottom: 11px;
+    margin: 0 0 11px;
     padding-right: 30px;
     padding-left: 309px;
     font-size: 30px;
@@ -328,8 +329,7 @@
 
 .advantages__research-descr {
   @media #{$tablet} {
-    margin: 0;
-    margin-bottom: 8px;
+    margin: 0 0 8px;
     padding-right: 10px;
     padding-left: 309px;
     font-size: 14px;
@@ -344,17 +344,5 @@
     padding-left: 366px;
     font-size: 18px;
     line-height: 30px;
-  }
-}
-
-@media #{$mobile} {
-  .advantages__item {
-    &:nth-child(3) {
-      &::before {
-        @media #{$retina} {
-          background-image: url("../img/iphone-screen-mobile@2x.png");
-        }
-      }
-    }
   }
 }
