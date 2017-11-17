@@ -1,8 +1,6 @@
 // В этом файле должны быть стили для БЭМ-блока price, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 $column-width: 280px;
-@media #{$tablet} {$column-width: 155px;}
-@media #{$desktop} {$column-width: 235px;}
 
 .price {
   position: relative;
@@ -29,6 +27,7 @@ $column-width: 280px;
     background-position: 0 40px, 0 0;
     background-size: 100% 80px, auto auto;
   }
+
 }
 
 .price__table-wrapper {
@@ -39,16 +38,21 @@ $column-width: 280px;
 }
 
 .price-table {
+
   width: $column-width * 3;
-  margin-left: -$column-width + 20px;
+  margin-left: $column-width + 20px;
   border-collapse: collapse;
 
   @media #{$tablet} {
+    $column-width: 155px;
     width: $column-width * 4;
     margin-left: 0;
   }
 
-  @media #{$desktop} {width: $column-width * 4;}
+  @media #{$desktop} {
+    $column-width: 235px;
+    width: $column-width * 4
+  }
 }
 
 .price-table__column {
@@ -56,7 +60,10 @@ $column-width: 280px;
   margin: 0;
   padding: 0;
 
-  @media #{tabet} {width: $column-width;}
+  @media #{$tablet} {
+    $column-width: 155px;
+    width: $column-width;
+  }
 
   &--row-names {
     display: none;
@@ -124,7 +131,7 @@ $column-width: 280px;
       @media #{$tablet} {
         width: 61px;
         height: 61px;
-        background: url("../img/bg-hit-$tablet.svg") no-repeat;
+        background: url("../img/bg-hit-tablet.svg") no-repeat;
       }
 
       @media #{$desktop} {
@@ -239,5 +246,6 @@ $column-width: 280px;
   left: 50%;
   transform: translateX(-50%);
 
-  @media #{$tablet} {display: none;}
+  @media #{$desktop} {display: none;}
+
 }
