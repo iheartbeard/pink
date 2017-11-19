@@ -13,6 +13,10 @@ $bg--dark: #1d2631;
 $bg--gray: #efefef;
 $bg--transparent: rgba(0, 0, 0, 0.3);
 
+$column-width-mobile: 280px;
+$column-width-tablet: 155px;
+$column-width-desktop: 235px;
+
 $mobile: "(max-width: 659px)";
 $tablet: "(min-width: 660px)";
 $desktop: "(min-width: 960px)";
