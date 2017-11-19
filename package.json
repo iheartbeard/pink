@@ -12,6 +12,7 @@
     "css-mqpacker": "latest",
     "run-sequence": "latest",
     "gulp": "latest",
+    "gulp-util": "latest",
     "gulp-wait": "latest",
     "gulp-size": "latest",
     "gulp-concat": "latest",
