@@ -5,10 +5,7 @@
 *.pdf
 *.psd
 *.sublime*
-*.rar
-*.zip
 build/
-src/scss/style.scss
+css/*.css
 node_modules/
 Thumbs.db
-__MACOSX
