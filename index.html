@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>HTML Academy: Пинк - Конкурс</title>
+  <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -13,8 +13,8 @@
     <div class="page-header__wrapper">
       <div class="page-header__inner">
         <div class="page-header__logo">
-          <a href="index.html" target="_blank">
-              <svg class="page-header__logo-svg" width="147" height="40" viewBox="0 0 147 40" enable-background="new 0 0 147 40">
+          <a>
+              <svg class="page-header__logo-svg page-header__logo-svg--index" width="147" height="40" viewBox="0 0 147 40" enable-background="new 0 0 147 40">
                 <g>
                   <path class="page-header__logo-name" fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
                   <path class="page-header__logo-name" fill="#FFFFFF" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -51,14 +51,14 @@
               <span></span>
           </span>
           <ul class="main-nav__list main-nav__list--visible">
-            <li class="main-nav__item">
-              <a href="index.html">Главная</a>
+            <li class="main-nav__item main-nav__item--active">
+              <a>Главная</a>
             </li>
             <li class="main-nav__item">
               <a href="photo.html">Фотографии</a>
             </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a>Конкурс</a>
+            <li class="main-nav__item">
+              <a href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
               <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
@@ -68,84 +68,187 @@
       </div>
     </div>
     <div class="page-header__bg-wrapper">
-      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="promo">
+        <div class="promo__wrapper">
+          <b class="promo__text">Взгляните на жизнь иначе!</b>
+          <a class="promo__download btn btn--white" href="#https://www.apple.com/ru/itunes/download/" target="_blank">Скачать приложение</a>
+          <ul class="promo__market-list">
+            <li class="promo__market-item promo__market-item--apple">
+              <a href="https://www.apple.com/ru/itunes/download/" target="_blank">iTunes</a>
+            </li>
+            <li class="promo__market-item promo__market-item--android">
+              <a href="https://play.google.com/store?hl=ru" target="_blank">Google Play</a>
+            </li>
+            <li class="promo__market-item promo__market-item--windows">
+              <a href="https://www.microsoft.com/en-us/store/windows-phone" target="_blank">Windows Store</a>
+            </li>
+          </ul>
+          <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
     </div>
   </header>
-
   <main class="page-content">
-    <p class="page-content__text page-content__text--page-form">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="form__full-name-group">
-        <div class="form__name-wrapper">
-          <label for="second-name">Фамилия:</label>
-          <input type="text" id="second-name" name="second-name" placeholder="Укажите фамилию *" required>
-        </div>
-        <div class="form__name-wrapper">
-          <label for="first-name">Имя:</label>
-          <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" required>
-        </div>
-        <div class="form__name-wrapper">
-          <label for="middle-name">Отчество:</label>
-          <input type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
-        </div>
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <p class="advantages__text">Устали от серости мегаполиса?</p>
+        <p class="advantages__text">Нам есть, что вам предложить!</p>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h2 class="advantages__title">Поднимает настроение</h2>
+            <p class="advantages__descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h2 class="advantages__title">Меняет мир вокруг</h2>
+            <p class="advantages__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h2 class="advantages__title">Заводит новых друзей</h2>
+            <p class="advantages__descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
       </div>
-      <div class="form__achievements-group">
-        <h2 class="form__group-title">Ваши безбашенные достижения в путешествии</h2>
-        <input type="checkbox" id="selfy" name="selfy" checked>
-        <label for="selfy">Сделал селфи с акулой</label>
-        <input type="checkbox" id="chuck-norris" name="chuck-norris">
-        <label for="chuck-norris">Видел Чака Норриса</label>
-        <input type="checkbox" id="tower" name="tower" checked>
-        <label for="tower">Удержал башню</label>
-        <input type="checkbox" id="burn" name="burn" checked>
-        <label for="burn">Обгорел на пляже</label>
-        <input type="checkbox" id="souvenir" name="souvenir">
-        <label for="souvenir">Накупил сувениров</label>
-        <input type="checkbox" id="hotel" name="hotel">
-        <label for="hotel">Разгромил отель</label>
-      </div>
-      <div class="form__contacts-group">
-        <h2 class="form__group-title">Контактная информация</h2>
-        <div class="form__contacts-wrapper">
-          <div class="form__tel-wrapper">
-            <label for="tel">Номер телефона</label>
-            <div class="form__tel-inner">
-              <input type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
-            </div>
-          </div>
-          <div class="form__email-wrapper">
-            <label for="email">Адрес почты</label>
-            <div class="form__email-inner">
-              <input type="email" id="email" name="email" placeholder="Введите почту *" required>
-            </div>
-          </div>
+      <div class="advantages__research">
+        <div class="advantages__wrapper advantages__wrapper--research">
+          <h2 class="advantages__research-title">Эффект на&nbsp;24&nbsp;часа!</h2>
+          <p class="advantages__research-descr">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+          <a class="advantages__link" href="#" target="_blank">Узнать больше об исследовании</a>
         </div>
       </div>
-      <div class="form__app-group">
-        <h2 class="form__group-title">С каким приложением путешествовали?</h2>
-        <input type="radio" id="ios" name="app" value="ios" checked>
-        <label for="ios">Pink для iOS</label>
-        <input type="radio" id="android" name="app" value="android">
-        <label for="android">Pink на Android</label>
-        <input type="radio" id="winphone" name="app" value="winphone">
-        <label for="winphone">Windows Phone</label>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <div class="reviews__list slider__wrapper">
+          <blockquote class="reviews__item reviews__item--visible slider__item">
+            <cite class="reviews__author-name">Николай Петров <span>25 лет, водитель трамвая</span></cite>
+            <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author-name">Николай Петров <span>25 лет, водитель трамвая</span></cite>
+            <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author-name">Николай Петров <span>25 лет, водитель трамвая</span></cite>
+            <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+          </blockquote>
+        </div>
+        <button class="reviews__prev" type="button">
+            <svg class="reviews__prev-svg">
+              <use xlink:href="img/symbols.svg#icon-review-arrow-left"></use>
+            </svg>
+          </button>
+        <button class="reviews__next" type="button">
+            <svg class="reviews__next-svg">
+              <use xlink:href="img/symbols.svg#icon-review-arrow-right"></use>
+            </svg>
+          </button>
+        <div class="reviews__pagination slider__pagination">
+          <span class="slider__pagination-item slider__pagination-item--active"></span>
+          <span class="slider__pagination-item"></span>
+          <span class="slider__pagination-item"></span>
+        </div>
       </div>
-      <div class="form__text-group">
-        <h2 class="form__group-title">Опишите свои эмоции</h2>
-        <textarea name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+    </section>
+    <section class="price">
+      <div class="price__table-wrapper slider">
+        <table class="price-table">
+          <tr>
+            <td class="price-table__column price-table__column--row-names">
+              <span class="price-table__name">Розовый фильтр</span>
+              <span class="price-table__name">Смайлики</span>
+              <span class="price-table__name">Комментарии</span>
+            </td>
+            <td class="price-table__column">
+              <div class="price-table__title">
+                <b>База</b>
+                <span>1,99 USD</span>
+              </div>
+              <div class="price-table__option">
+                <span class="price-table__option-name">Розовый фильтр</span>
+                <span class="price-table__tick">Есть</span>
+              </div>
+              <div class="price-table__option">
+                <span class="price-table__option-name">Смайлики</span>
+                <span class="price-table__cross">Нет</span>
+              </div>
+              <div class="price-table__option">
+                <span class="price-table__option-name">Комментарии</span>
+                <span class="price-table__cross">Нет</span>
+              </div>
+            </td>
+            <td class="price-table__column">
+              <div class="price-table__title price-table__title--hit">
+                <b>Стандарт</b>
+                <span>3,99 USD</span>
+              </div>
+              <div class="price-table__option">
+                <span class="price-table__option-name">Розовый фильтр</span>
+                <span class="price-table__tick">Есть</span>
+              </div>
+              <div class="price-table__option">
+                <span class="price-table__option-name">Смайлики</span>
+                <span class="price-table__tick">Есть</span>
+              </div>
+              <div class="price-table__option">
+                <span class="price-table__option-name">Комментарии</span>
+                <span class="price-table__cross">Нет</span>
+              </div>
+            </td>
+            <td class="price-table__column">
+              <div class="price-table__title">
+                <b>Анлим</b>
+                <span>9,99 USD</span>
+              </div>
+              <div class="price-table__option">
+                <span class="price-table__option-name">Розовый фильтр</span>
+                <span class="price-table__tick">Есть</span>
+              </div>
+              <div class="price-table__option">
+                <span class="price-table__option-name">Смайлики</span>
+                <span class="price-table__tick">Есть</span>
+              </div>
+              <div class="price-table__option">
+                <span class="price-table__option-name">Комментарии</span>
+                <span class="price-table__tick">Есть</span>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div class="price__pagination slider__pagination">
+          <span class="slider__pagination-item"></span>
+          <span class="slider__pagination-item slider__pagination-item--active"></span>
+          <span class="slider__pagination-item"></span>
+        </div>
       </div>
-      <div class="form__btn-group">
-        <button class="form__send-btn" type="submit">Отправить форму</button>
-        <p class="form__note"><span class="form__note-asterisk">*</span> — обязательные<span class="form__note-hidden"> для заполнения</span> поля</p>
+    </section>
+    <section class="contacts">
+      <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <b>Звоните:</b>
+          <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </li>
+        <li class="contacts__item">
+          <b>Пишите:</b>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </li>
+        <li class="contacts__item">
+          <b>Приезжайте в гости:</b>
+          <a>ул. Большая<br>Конюшенная, 19/8 </a>
+        </li>
+      </ul>
+      <div class="contacts__map-wrapper">
+        <div class="contacts__map-inner">
+          <div class="contacts__map"></div>
+        </div>
       </div>
-    </form>
-
+    </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--index">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <a href="index.html">
-            <svg class="page-footer__logo-svg" width="147" height="40" viewBox="0 0 147 40" enable-background="new 0 0 147 40" xml:space="preserve">
+        <a>
+            <svg class="page-footer__logo-svg page-footer__logo-svg--index" width="147" height="40" viewBox="0 0 147 40" enable-background="new 0 0 147 40" xml:space="preserve">
               <g>
                 <path class="page-footer__logo-name" fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
                 <path class="page-footer__logo-name" fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -204,21 +307,11 @@
       </div>
     </div>
   </footer>
-  <div class="modal modal--failed">
-    <h2 class="modal__title">Что-то пошло не так!</h2>
-    <p class="modal__descr">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal__btn" type="button">Ок</button>
-  </div>
-  <div class="modal modal--success">
-    <h2 class="modal__title">Ваша заявка отправлена</h2>
-    <p class="modal__descr">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
-    <button class="modal__btn" type="button">Закрыть окно</button>
-  </div>
   <script>
     document.createElement("picture");
   </script>
-  <script src="js/picturefill.min.js" async></script>
-  <script src="js/script.min.js"></script>
+  <script src="js/picturefill.js" async></script>
+  <script src="js/script.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
 </body>
 
