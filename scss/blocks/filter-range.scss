@@ -7,23 +7,23 @@
     .filter-range__toggle {
       left: 83%;
 
-      @media #{$tablet} {left: 75%;}
+      @media (min-width: $tablet) {left: 75%;}
 
-      @media #{$desktop} {left: 27%;}
+      @media (min-width: $desktop) {left: 27%;}
     }
   }
 
   &:nth-of-type(2) {
     .filter-range__toggle {
-      @media #{$tablet} {left: 15%;}
+      @media (min-width: $tablet) {left: 15%;}
 
-      @media #{$desktop} {left: 88%;}
+      @media (min-width: $desktop) {left: 88%;}
       }
     }
 
   &:nth-of-type(3) {
     .filter-range__toggle {
-      @media #{$desktop} {left: 58%;}
+      @media (min-width: $desktop) {left: 58%;}
     }
   }
 }

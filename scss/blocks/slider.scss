@@ -12,9 +12,9 @@
   border-radius: 50%;
   cursor: pointer;
 
-  @media #{tablet} {display: none;}
+  @media (min-width: $tablet) {display: none;}
 
-  @media #{$desktop} {display: none;}
+  @media (min-width: $desktop) {display: none;}
 
   &:last-child {
     margin-right: 0;

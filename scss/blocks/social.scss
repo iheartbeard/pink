@@ -5,12 +5,12 @@
   width: 178px;
   margin-bottom: 28px;
 
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     margin-top: 3px;
     margin-bottom: 0;
   }
 
-  @media #{$desktop} {margin-left: 7px;}
+  @media (min-width: $desktop) {margin-left: 7px;}
 }
 
 .social__link {

@@ -5,7 +5,7 @@
   background-clip: content-box;
   color: $txt--white;
 
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     display: flex;
     position: relative;
     width: 620px;
@@ -15,7 +15,7 @@
     background-color: transparent;
   }
 
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     width: 940px;
     padding-top: 219px;
     padding-bottom: 124px;
@@ -29,14 +29,14 @@
     font-weight: 300;
     line-height: 24px;
 
-    @media #{$tablet} {
+    @media (min-width: $tablet) {
       margin-top: 36px;
       margin-right: 3px;
       padding: 0;
       font-size: 18px;
     }
 
-    @media #{$desktop} {
+    @media (min-width: $desktop) {
       width: 310px;
       margin-top: 55px;
     }
@@ -49,13 +49,13 @@
   margin: 0 auto;
   text-align: center;
 
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     position: static;
     width: 300px;
     margin: 0;
   }
 
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -73,13 +73,12 @@
     background-repeat: no-repeat;
     background-size: 258px auto;
 
-    @media #{$mobile} {
-      @media #{$retina} {
-        background-image: url("../img/iphone-hand-mobile@2x.png");
-      }
+    @media (max-width: $mobile) and (min-resolution: $retina-dpi),
+    (max-width: $mobile) and (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png");
     }
 
-    @media #{$tablet} {
+    @media (min-width: $tablet) {
       top: auto;
       right: 0;
       bottom: 0;
@@ -89,22 +88,25 @@
       height: 545px;
       background-image: url("../img/iphone-hand-tablet@1x.png");
       background-size: 700px auto;
-
-      @media #{$retina} {
-        background-image: url("../img/iphone-hand-tablet@2x.png");
-      }
     }
 
-    @media #{$desktop} {
+
+    @media (min-width: $tablet) and (min-resolution: $retina-dpi),
+    (min-width: $tablet) and (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+    }
+
+    @media (min-width: $desktop) {
       width: 660px;
       height: 645px;
       background-image: url("../img/iphone-hand-desktop@1x.png");
       background-position: -263px;
       background-size: 1050px auto;
+    }
 
-      @media #{$retina} {
-        background-image: url("../img/iphone-hand-desktop@2x.png");
-      }
+    @media (min-width: $desktop) and (min-resolution: $retina-dpi),
+    (min-width: $desktop) and (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
     }
   }
 }
@@ -113,7 +115,7 @@
   display: none;
   margin: 0;
 
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     display: block;
     margin-bottom: 2px;
     padding: 0 40px;
@@ -122,7 +124,7 @@
     line-height: 48px;
   }
 
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     width: 300px;
     margin-bottom: 28px;
     padding: 0;
@@ -136,13 +138,13 @@
   padding-left: 36px;
   padding-right: 36px;
 
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     margin-bottom: 15px;
     padding-left: 44px;
     padding-right: 44px;
   }
 
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     box-sizing: border-box;
     width: 300px;
     margin-bottom: 35px;
@@ -161,7 +163,7 @@
   padding: 0;
   list-style: none;
 
-  @media #{$desktop} {width: 300px;}
+  @media (min-width: $desktop) {width: 300px;}
 }
 
 .promo__market-item {

@@ -3,7 +3,7 @@
   padding-bottom: 60px;
   background: $bg--white;
 
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     position: static;
     padding-bottom: 0;
   }
@@ -12,10 +12,10 @@
 .reviews__wrapper {
   @include container;
 
-  @media #{$desktop} {position: relative;}
+  @media (min-width: $desktop) {position: relative;}
 
   &::before {
-    @media #{$desktop} {
+    @media (min-width: $desktop) {
       content: "";
       display: block;
       position: absolute;
@@ -36,9 +36,9 @@
   padding-top: 42px;
   text-align: center;
 
-  @media #{$tablet} {padding-top: 54px;}
+  @media (min-width: $tablet) {padding-top: 54px;}
 
-  @media #{$desktop} {padding-top: 186px;}
+  @media (min-width: $desktop) {padding-top: 186px;}
 
   &--visible {
     display: flex;
@@ -54,13 +54,13 @@
     color: $gray--dark;
     quotes: "\00ab" "\00bb";
 
-    @media #{$tablet} {
+    @media (min-width: $tablet) {
       margin-bottom: 35px;
       padding: 0;
       font-size: 18px;
     }
 
-    @media #{$desktop} {
+    @media (min-width: $desktop) {
       margin-bottom: 37px;
       padding: 0 78px;
     }
@@ -68,13 +68,13 @@
     &::before {
       content: open-quote;
 
-      @media #{$desktop} {content: none;}
+      @media (min-width: $desktop) {content: none;}
     }
 
     &::after {
       content: close-quote;
 
-      @media #{$desktop} {content: none;}
+      @media (min-width: $desktop) {content: none;}
     }
   }
 }
@@ -87,18 +87,18 @@
   line-height: 30px;
   color: $txt-black;
 
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     order: 2;
     margin-bottom: 0;
     font-size: 20px;
   }
 
-  @media #{$desktop} {font-size: 24px;}
+  @media (min-width: $desktop) {font-size: 24px;}
 
   span {
     display: none;
 
-    @media #{$tablet} {
+    @media (min-width: $tablet) {
       display: block;
       margin-top: 2px;
       font-size: 14px;
@@ -107,7 +107,7 @@
       color: $gray--dark;
     }
 
-    @media #{$desktop} {
+    @media (min-width: $desktop) {
       margin-top: 2px;
       font-size: 18px;
     }
@@ -117,14 +117,14 @@
 .reviews__prev {
   display: none;
 
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     @include reviews-button;
     left: 0;
   }
 }
 
 .reviews__prev-svg {
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     width: 22px;
     height: 42px;
     fill: #283645;
@@ -132,25 +132,25 @@
   }
 
   &:hover {
-    @media #{$desktop} {fill-opacity: 0.6;}
+    @media (min-width: $desktop) {fill-opacity: 0.6;}
   }
 
   &:active {
-    @media #{$desktop} {fill-opacity: 0.1;}
+    @media (min-width: $desktop) {fill-opacity: 0.1;}
   }
 }
 
 .reviews__next {
   display: none;
 
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     @include reviews-button;
     right: 0;
   }
 }
 
 .reviews__next-svg {
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     width: 22px;
     height: 42px;
     fill: #283645;
@@ -158,11 +158,11 @@
   }
 
   &:hover {
-    @media #{$desktop} {fill-opacity: 0.6;}
+    @media (min-width: $desktop) {fill-opacity: 0.6;}
   }
 
   &:active {
-    @media #{$desktop} {fill-opacity: 0.1;}
+    @media (min-width: $desktop) {fill-opacity: 0.1;}
   }
 }
 
@@ -172,5 +172,5 @@
   left: 50%;
   transform: translateX(-50%);
 
-  @media #{$desktop} {display: none;}
+  @media (min-width: $desktop) {display: none;}
 }

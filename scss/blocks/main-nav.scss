@@ -5,7 +5,7 @@
   color: $txt--white;
   text-transform: uppercase;
 
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
@@ -19,9 +19,9 @@
   height: 22px;
   padding: 22px 20px 26px;
 
-  @media #{$tablet} {padding: 44px 20px 43px;}
+  @media (min-width: $tablet) {padding: 44px 20px 43px;}
 
-  @media #{$desktop} {display: none;}
+  @media (min-width: $desktop) {display: none;}
 
   span {
     display: block;
@@ -72,7 +72,7 @@
   padding: 0;
   list-style: none;
 
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -84,7 +84,7 @@
 }
 
 .main-nav__item {
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     margin: 0;
     padding: 45px 0 47px;
   }
@@ -100,7 +100,7 @@
     text-decoration: none;
     text-align: center;
 
-    @media #{$desktop} {
+    @media (min-width: $desktop) {
       margin-left: 80px;
       padding: 0;
       background-color: transparent;
@@ -114,7 +114,7 @@
     &:active {
       color: rgba($pink, 0.3);
 
-      @media #{$desktop} {color: rgba(255, 255, 255, 0.3);}
+      @media (min-width: $desktop) {color: rgba(255, 255, 255, 0.3);}
     }
   }
 
@@ -122,7 +122,7 @@
     a {
       cursor: default;
 
-      @media #{$desktop} {
+      @media (min-width: $desktop) {
         position: relative;
 
         &::before {

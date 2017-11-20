@@ -8,7 +8,7 @@
   background-size: 100% 26px, auto auto;
   overflow: hidden;
 
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     padding-top: 95px;
     padding-bottom: 69px;
     background-image: url("../img/bg-triangle-white.svg"), linear-gradient(to bottom, transparent, transparent 10px, $bg--gray 10px, $bg--gray);
@@ -16,7 +16,7 @@
     background-size: 100% 50px, auto auto;
   }
 
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     padding-top: 186px;
     padding-bottom: 96px;
     background-image: url("../img/bg-triangle-white.svg"), linear-gradient(to bottom, transparent, transparent 41px, $bg--gray 41px, $bg--gray);
@@ -29,7 +29,7 @@
   @include container;
   display: flex;
 
-  @media #{$tablet} {justify-content: center;}
+  @media (min-width: $tablet) {justify-content: center;}
 }
 
 .price-table {
@@ -37,12 +37,12 @@
   margin-left: -$column-width-mobile + 20px;
   border-collapse: collapse;
 
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     width: $column-width-tablet * 4;
     margin-left: 0;
   }
 
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     width: $column-width-desktop * 4;
   }
 }
@@ -52,12 +52,12 @@
   margin: 0;
   padding: 0;
 
-  @media #{$tablet} {width: $column-width-tablet;}
+  @media (min-width: $tablet) {width: $column-width-tablet;}
 
   &--row-names {
     display: none;
 
-    @media #{$tablet} {
+    @media (min-width: $tablet) {
       display: table-cell;
       vertical-align: bottom;
     }
@@ -74,12 +74,12 @@
   line-height: 30px;
   color: $gray--dark;
 
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     padding: 8px 0 7px 16px;
     font-size: 14px;
   }
 
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     padding: 14px 0 15px 22px;
     font-size: 18px;
   }
@@ -96,12 +96,12 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     padding-top: 14px;
     padding-bottom: 7px;
   }
 
-  @media #{$desktop} {
+  @media (min-width: $desktop) {
     padding-top: 17px;
     padding-bottom: 17px;
   }
@@ -117,13 +117,13 @@
       height: 73px;
       background: url("../img/bg-hit.svg") no-repeat;
 
-      @media #{$tablet} {
+      @media (min-width: $tablet) {
         width: 61px;
         height: 61px;
         background: url("../img/bg-hit-tablet.svg") no-repeat;
       }
 
-      @media #{$desktop} {
+      @media (min-width: $desktop) {
         width: 74px;
         height: 73px;
         background: url("../img/bg-hit.svg") no-repeat;
@@ -145,13 +145,13 @@
       text-transform: uppercase;
       text-align: left;
 
-      @media #{$tablet} {
+      @media (min-width: $tablet) {
         top: 15px;
         left: 9px;
         transform-origin: left;
       }
 
-      @media #{$desktop} {
+      @media (min-width: $desktop) {
         top: 5px;
         left: 5px;
         transform-origin: center;
@@ -165,12 +165,12 @@
     font-weight: 700;
     line-height: 30px;
 
-    @media #{$tablet} {
+    @media (min-width: $tablet) {
       font-size: 16px;
       line-height: 26px;
     }
 
-    @media #{$desktop} {
+    @media (min-width: $desktop) {
       font-size: 18px;
       line-height: 30px;
     }
@@ -181,9 +181,9 @@
     font-weight: 300;
     line-height: 30px;
 
-    @media #{$tablet} {font-size: 18px;}
+    @media (min-width: $tablet) {font-size: 18px;}
 
-    @media #{$desktop} {font-size: 24px;}
+    @media (min-width: $desktop) {font-size: 24px;}
   }
 }
 
@@ -194,12 +194,12 @@
   background-color: #fff;
   border: 1px solid #e5e5e5;
 
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     justify-content: center;
     padding: 8px 0 7px;
   }
 
-  @media #{$desktop} {padding: 14px 18px 15px 22px;}
+  @media (min-width: $desktop) {padding: 14px 18px 15px 22px;}
 }
 
 .price-table__option-name {
@@ -209,7 +209,7 @@
   color: $gray--dark;
   text-transform: uppercase;
 
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     position: absolute;
     clip: rect(0 0 0 0);
   }
@@ -235,6 +235,6 @@
   left: 50%;
   transform: translateX(-50%);
 
-  @media #{$tablet} {display: none;}
+  @media (min-width: $tablet) {display: none;}
 
 }

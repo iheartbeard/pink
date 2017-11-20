@@ -10,7 +10,7 @@
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
   transform: translate(-50%, -50%);
 
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     width: 460px;
     padding-left: 80px;
     padding-right: 80px;
@@ -19,12 +19,12 @@
   &--success {
     background-image: linear-gradient(to top, $bg--gray, $bg--gray 163px, #fff 163px, #fff);
 
-    @media #{$tablet} {
+    @media (min-width: $tablet) {
       padding-left: 70px;
       padding-right: 70px;
     }
 
-    @media #{$desktop} {
+    @media (min-width: $desktop) {
       width: 780px;
       padding-left: 160px;
       padding-right: 160px;
@@ -33,7 +33,7 @@
     .modal__descr {
       margin-bottom: 80px;
 
-      @media #{$desktop} {margin-bottom: 85px;}
+      @media (min-width: $desktop) {margin-bottom: 85px;}
     }
   }
 
@@ -43,7 +43,7 @@
 }
 
 .modal__wrap {
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     padding-bottom: 50px;
     padding-left: 80px;
     padding-right: 80px;
@@ -59,7 +59,7 @@
   color: #000;
   text-align: center;
 
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     padding: 0 20px;
     font-size: 30px;
     line-height: 40px;
@@ -75,11 +75,11 @@
   color: $gray--dark;
   text-align: center;
 
-  @media #{$tablet} {font-size: 18px;}
+  @media (min-width: $tablet) {font-size: 18px;}
 }
 
 .modal__text {
-  @media #{$tablet} {
+  @media (min-width: $tablet) {
     font-size: 18px;
     padding-left: 77px;
     padding-right: 77px;
@@ -101,9 +101,9 @@
   color: $txt--white;
   text-transform: uppercase;
 
-  @media #{$tablet} {width: 300px;}
+  @media (min-width: $tablet) {width: 300px;}
 
-  @media #{$desktop} {width: 100%;}
+  @media (min-width: $desktop) {width: 100%;}
 
   &:hover {
     background-color: $green--hover;
