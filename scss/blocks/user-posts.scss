@@ -1,0 +1,222 @@
+.user-posts {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg--white;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {width: 940px;}
+
+  &--panorama {
+    display: block;
+    padding-top: 50px;
+
+    @media (min-width: $tablet) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: auto;
+      padding-top: 75px;
+    }
+
+    @media (min-width: $desktop) {
+      width: auto;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 88px;
+    }
+  }
+}
+
+.user-posts__post-wrapper {
+  width: 280px;
+  margin: 0 auto 20px;
+  background-color: $bg--gray;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    width: 300px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {margin-bottom: 54px;}
+
+  &--panorama {
+    width: auto;
+    background-color: transparent;
+
+    @media (min-width: $tablet) {
+      width: auto;
+      margin-bottom: 50px;
+      background-color: transparent;
+    }
+
+    @media (min-width: $desktop) {margin-bottom: 50px;}
+  }
+}
+
+.user-posts__img {
+  background-color: #ccc;
+  line-height: 0;
+
+  &--panorama {
+    position: relative;
+
+    &::before {
+      content: "Панорама дня";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 21px;
+      padding: 5px 20px 7px;
+      background-color: $pink;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #fff;
+      text-transform: uppercase;
+
+      @media (min-width: $tablet) {top: 57px;}
+
+      @media (min-width: $desktop) {
+        top: 54px;
+        right: 129px;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.user-posts__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 17px;
+  padding-right: 17px;
+  padding-bottom: 21px;
+  padding-left: 17px;
+  background-color: $bg--gray;
+
+  @media (min-width: $tablet) {
+    box-sizing: border-box;
+    min-height: 155px;
+    padding-top: 23px;
+    padding-right: 27px;
+    padding-bottom: 50px;
+    padding-left: 27px;
+  }
+
+  &--panorama {
+    box-sizing: border-box;
+    width: 280px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 620px;
+      min-height: 0;
+      padding-bottom: 15px;
+    }
+
+    @media (min-width: $desktop) {width: 940px;}
+  }
+}
+
+.user-posts__author-wrapper {
+  display: flex;
+  order: 1;
+}
+
+.user-posts__user-name {
+  margin-right: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $gray--dark;
+}
+
+.user-posts__time {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  color: $gray--dark;
+  text-transform: uppercase;
+}
+
+.user-posts__comment {
+  order: 2;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $gray--dark;
+
+  @media (min-width: $tablet) {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 11px;
+  }
+}
+
+.user-posts__like-wrapper {
+  display: flex;
+  align-items: center;
+  order: 3;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    bottom: 24px;
+    width: 245px;
+    margin-bottom: 0;
+  }
+
+  &--panorama {
+    @media (min-width: $tablet) {
+      order: 1;
+      position: static;
+      bottom: 24px;
+      width: auto;
+      margin: 0;
+      margin-left: auto;
+    }
+  }
+
+  &--panorama .user-posts__like {
+      @media (min-width: $desktop) {margin-left: 5px;}
+  }
+}
+
+.user-posts__like {
+  @include text-hidden;
+  width: 13px;
+  height: 12px;
+  margin-right: 20px;
+  background: url("../img/icon-heart.svg") no-repeat;
+  background-size: 13px 12px;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    order: 2;
+    margin-right: 4px;
+    margin-left: auto;
+  }
+}
+
+.user-posts__like-counter {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $pink;
+  text-transform: uppercase;
+}

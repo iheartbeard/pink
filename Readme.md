@@ -1,6 +1,6 @@
 # Личный проект «Пинк»  
 
-* Студент: [Иван Второв](https://up.htmlacademy.ru/adaptive/11/user/170315).
+* Студент: [Иван Второв](https://htmlacademy.ru/profile/iheartbeard).
 * Наставник: [Алексей Белов](https://github.com/Badaboom1995)
 ---
 
